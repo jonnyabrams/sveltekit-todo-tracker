@@ -1,8 +1,11 @@
 <script>
 	let todo = '';
 
+	import { addTodo } from '../stores/todoStore.js';
+
 	const handleSubmit = () => {
-		console.log('submitting');
+		addTodo(todo);
+		todo = '';
 	};
 </script>
 
